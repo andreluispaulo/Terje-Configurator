@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 
-type Locale = 'pt-BR' | 'en-US' | 'es-ES';
+type Locale = 'pt-BR' | 'en-US' | 'es-ES' | 'ru-RU';
 
 const translations = {
   'pt-BR': {
@@ -45,6 +45,20 @@ const translations = {
     chooseFile: 'Elija un archivo del menú lateral para comenzar a editar.',
     search: 'Buscar...',
     xmlDevWarning: 'Aviso: La edición de XML está en desarrollo. Pronto habrá un editor personalizado para cada archivo.',
+  },
+  'ru-RU': {
+    title: 'Terje Config',
+    selectFile: 'Выберите файл',
+    saveChanges: 'Сохранить изменения',
+    saving: 'Сохранение...',
+    line: 'Строка',
+    type: 'Тип',
+    default: 'По умолчанию',
+    description: 'Описание',
+    selectModule: 'Выберите модуль для настройки',
+    chooseFile: 'Выберите файл в боковом меню, чтобы начать редактирование.',
+    search: 'Поиск...',
+    xmlDevWarning: 'Внимание: Редактирование XML находится в разработке. Скоро появится специальный редактор для каждого файла.',
   }
 };
 

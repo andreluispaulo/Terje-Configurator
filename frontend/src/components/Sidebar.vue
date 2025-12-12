@@ -44,7 +44,7 @@ onMounted(async () => {
         <Languages :size="14" />
         <span class="text-[10px] font-bold uppercase tracking-widest opacity-70">Region</span>
       </div>
-      <div class="grid grid-cols-3 gap-1 p-1 bg-background rounded-lg border border-input shadow-sm">
+      <div class="grid grid-cols-4 gap-1 p-1 bg-background rounded-lg border border-input shadow-sm">
         <button 
           @click="i18n.setLocale('pt-BR')"
           class="px-2 py-1.5 text-xs rounded-md transition-all font-medium flex items-center justify-center"
@@ -60,6 +60,11 @@ onMounted(async () => {
           class="px-2 py-1.5 text-xs rounded-md transition-all font-medium flex items-center justify-center"
           :class="i18n.currentLocale === 'es-ES' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground hover:bg-muted'"
         >ES</button>
+        <button 
+          @click="i18n.setLocale('ru-RU')"
+          class="px-2 py-1.5 text-xs rounded-md transition-all font-medium flex items-center justify-center"
+          :class="i18n.currentLocale === 'ru-RU' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground hover:bg-muted'"
+        >RU</button>
       </div>
     </div>
   </div>
