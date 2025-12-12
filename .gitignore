@@ -1,5 +1,6 @@
 # Binaries
 *.exe
+!TerjeConfigurator_Final_v1.exe
 *.dll
 *.so
 *.dylib

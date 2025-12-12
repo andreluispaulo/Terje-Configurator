@@ -87,7 +87,7 @@ function getInputType(val: string, metadata?: any) {
     if (metadata?.type) {
         const type = metadata.type.toLowerCase().trim();
         if (type === 'bool' || type === 'boolean') return 'bool';
-        if (type === 'int' || type === 'integer' || type === 'float' || type === 'number' || type === 'decimal') return 'number';
+        if (['int', 'integer', 'float', 'number', 'decimal', 'double'].includes(type)) return 'number';
         return 'text';
     }
 
