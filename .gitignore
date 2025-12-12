@@ -1,0 +1,31 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.syso
+
+# Logs
+*.log
+context_log.txt
+
+# Databases
+*.db
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Backend
+backend/dist/
+backend/terje_history.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
